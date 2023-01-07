@@ -7,7 +7,7 @@ namespace FishingChestsExpanded
         public bool EnableMod { get; set; } = true;
         public int VanillaLootChance { get; set; } = 0;
         public int ChanceForTreasureChest { get; set; } = -1;
-        public int MaxItems { get; set; } = 5;
+        public int MaxItems { get; set; } = 10;
         public int ItemsBaseMaxValue { get; set; } = 100;
         public int MinItemValue { get; set; } = 20;
         public int MaxItemValue { get; set; } = -1;
@@ -17,18 +17,18 @@ namespace FishingChestsExpanded
         public Dictionary<string, int> ItemListChances { get; set; } = new Dictionary<string, int>
         {
             {"MeleeWeapon", 100},
-            {"Shirt", 0},
-            {"Pants", 0},
-            {"Hat", 0},
+            {"Shirt", 10},
+            {"Pants", 10},
+            {"Hat", 10},
             {"Boots", 100},
             {"BigCraftable", 100},
             {"Ring", 100},
             {"Seed", 100},
             {"Mineral", 100},
             {"Relic", 100},
-            {"Cooking", 0},
-            {"Fish", 0},
-            {"BasicObject", 0}
+            {"Cooking", 25},
+            {"Fish", 25},
+            {"BasicObject", 20}
         };
     }
 }
